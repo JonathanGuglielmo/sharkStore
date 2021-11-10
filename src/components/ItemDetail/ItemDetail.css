@@ -1,0 +1,22 @@
+.ItemDetail img{
+    width: 50%;
+    justify-content: end;
+    margin-top: 3em;
+}
+
+.ItemDetail p{
+    width: 100%;
+}
+
+.ItemDetail .divImg{
+    display: flex;
+    justify-content: end;
+}
+
+.ItemDetail .divText{
+    text-align: start;
+}
+
+.ItemDetail .ItemCountDiv{
+    text-align: start;
+}

@@ -1,0 +1,37 @@
+nav{
+  background-color: rgb(34, 34, 34);
+  padding: 1em 0;
+  border-bottom: 2px black solid;
+}
+nav img{
+  max-width: 50%;
+  height: 50%;
+  justify-content: center;
+
+}
+nav ul{
+  width: 50%;
+  margin: auto 0!important;
+  padding: 1em;
+  display: flex;
+  justify-content: space-around!important;
+}
+nav li{
+  border-radius: 5px;
+  background-color: black;
+  list-style: none;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 5px;
+  border: solid 1px black;
+}
+nav a{
+  color: white
+   !important;
+  text-decoration: none!important;
+}
+nav a:hover{
+  color: red!important;
+}
+nav a::after{
+  color: #000;
+}

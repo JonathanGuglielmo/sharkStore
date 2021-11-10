@@ -1,0 +1,38 @@
+.miItem{
+    padding: 10px;
+}
+.card{
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+    height: 620px;
+    background-color: rgb(219, 219, 219);
+}
+
+.miCard .card-body{
+    padding: 1rem 0rem!important;
+}
+
+.miCard{
+    padding: 2em 1em;
+}
+
+.miCard img{
+    box-shadow: 0 0 6px -1px black;
+}
+
+.miCard h3{
+    color: black;
+    font-size: 1.2em;
+}
+
+.miCard a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-color: none;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+}
+
+.btn-ver-producto{
+    width: 80%;
+    margin: 1em auto;
+    background-color: rgb(26, 136, 170);
+}

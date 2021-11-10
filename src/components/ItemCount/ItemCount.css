@@ -1,0 +1,24 @@
+#ItemCount{
+    width: 80%;
+    display: flex;
+    margin: 1em auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#ItemCount p{
+    width: 30%;
+    text-align: center;
+    margin: 0 10%;
+    padding: 6px ;
+    border-bottom: 1px black solid;
+}
+.btnAddCart{
+    background-color: black;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    margin: auto;
+    width: 80%;
+}
+

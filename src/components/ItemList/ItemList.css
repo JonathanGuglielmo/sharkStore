@@ -1,0 +1,32 @@
+.ul-productos {
+    display: flex;
+}
+
+.mi-div-item{
+    padding-top: 1em;
+}
+
+.div-filtros{
+    padding-bottom: 1em;
+    border-bottom: 1px solid black;
+}
+
+.ul-productos li{
+    list-style: none;
+    text-decoration: none;
+}
+
+.ul-productos li:hover{
+    border-radius: 5px;
+}
+
+.ul-productos li u{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.ul-productos li u:hover{
+    color: red;
+}

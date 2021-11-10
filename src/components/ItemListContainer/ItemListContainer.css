@@ -1,0 +1,13 @@
+.div-ItemListContainer h2{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+.div-ItemListContainer{
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+
+}

@@ -1,0 +1,30 @@
+.cartDiv {
+    min-height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subTotal {
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.productoDesc {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 1em;
+    padding: 5px ;
+    color: white;
+    text-decoration: none;
+}
+
+.finishOrder {
+    background-color: rgb(45, 204, 45);
+    color: white;
+    border-color: none;
+    box-shadow: none;
+    border-radius: 5px;
+    width: 20vh;
+    height: 5vh;
+}
