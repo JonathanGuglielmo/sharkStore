@@ -38,15 +38,15 @@ const Cart = () => {
   compraQuery.add(ordenDeCompra)
   .then(result => alert(`su id de compra es ${result.id}`))
   .catch(err => console.log(err))
-  // .finally(()=>{
-  //   vaciarCart()
-  //   setFormData({
-  //     name:'',
-  //     phone:'',
-  //     email:'',
-  //   })
-  //   console.log('terminó la compra')
-  // })
+  .finally(()=>{
+    vaciarCart()
+    setFormData({
+      name:'',
+      phone:'',
+      email:'',
+    })
+    console.log('terminó la compra')
+  })
 
   }
 
