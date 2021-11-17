@@ -1,4 +1,4 @@
-import React from "react";
+import {useState} from "react";
 import { Link } from "react-router-dom";
 import { useCartContext } from "../../context/cartContext";
 import { getFirestore } from "../../services/getFirebase";
@@ -7,15 +7,19 @@ import 'firebase/firestore'
 
 
 const Cart = () => {
+  const [formData, setFormData] = useState({
+    name:'',
+    phone:'',
+    email:'',
+  })
+  
   const { cartList, eliminarItem, vaciarCart, subTotal } = useCartContext();
 
-  const generarCompra = () => {
-
+  const generarCompra = (e) =>{
+    e.preventDefault()
 
     let ordenDeCompra = {};
-
-
-    ordenDeCompra.buyer = {name:'Jonathan', phone:'1565662861', email:'guglielmojonathan@gmail.com'};
+    ordenDeCompra.buyer = formData;
     ordenDeCompra.total = subTotal;
     ordenDeCompra.items = cartList.map(cartItem => {
       const id = cartItem.id;
@@ -25,7 +29,8 @@ const Cart = () => {
       return {id, title, price}
 
     })
-  
+
+
     console.log(ordenDeCompra)
 
   const dbQuery = getFirestore()
@@ -33,8 +38,27 @@ const Cart = () => {
   compraQuery.add(ordenDeCompra)
   .then(result => alert(`su id de compra es ${result.id}`))
   .catch(err => console.log(err))
+  // .finally(()=>{
+  //   vaciarCart()
+  //   setFormData({
+  //     name:'',
+  //     phone:'',
+  //     email:'',
+  //   })
+  //   console.log('terminó la compra')
+  // })
 
   }
+
+  const handleOnChange=(e)=>{
+    setFormData(    
+      {
+        ...formData,
+        [e.target.name]: e.target.value
+      }
+      )
+  }
+
   return (
       
     <div className="text-center" style={{width:"50%", margin:"auto"}}>
@@ -78,8 +102,16 @@ const Cart = () => {
         </div>
         
       )}
+
       <div>
-        <button className="finishOrder" onClick={()=>generarCompra()}>Terminar compra</button>
+        <form onSubmit={generarCompra} onChange={handleOnChange}>
+          <input type="text" name='name' placeholder='nombre' value={formData.name} />
+          <input type="text" name='phone' placeholder='telefono' value={formData.phone}/>
+          <input type="email" name='email' placeholder='mail' value={formData.email}/>
+          <div>
+            <button className="finishOrder" onClick={()=>generarCompra()}>Terminar compra</button>
+          </div>
+        </form>
       </div>
     </div>
   );
