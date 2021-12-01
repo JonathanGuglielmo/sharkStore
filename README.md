@@ -12,7 +12,7 @@ _Este proyecto está realizado con React.js_
 ### :mag_right: Descripcion y características
 
 - Proyecto final del curso de React-js de Coderhouse.
-- Tienda virtual orientada a la venta de insumos tecnológicos.
+- Spa de Tienda virtual orientada a la venta de insumos tecnológicos.
 - Los productos están almacenados en firebase.
 - Posee filtrado de productos por categoría.
 - Funcionalidad de limitar la cantidad de productos que el cliente puede añadir en base al stock disponible (en el lado del cliente).
