@@ -1,4 +1,5 @@
 import React, { useState, useEffect, memo } from "react";
+import {gsap} from 'gsap';
 import { Link } from "react-router-dom";
 import { getFirestore } from "../../services/getFirebase";
 
@@ -9,6 +10,12 @@ const ItemList = memo(
   ({ category }) => {
     const [loading, setLoading] = useState(true);
     const [items, setItems] = useState([]);
+    const timeline = gsap.timeline()
+
+    useEffect (() => {
+      const mov1 = document.querySelector(".filtrar");
+      timeline.from(mov1, {opacity: 0, x: 50, duration:3});
+  }, []);
 
     useEffect(() => {
       if (category) {
@@ -36,7 +43,7 @@ const ItemList = memo(
     return (
       <div className="mt-3">
         <div className="text-center d-flex align-items-center justify-content-center row div-filtros">
-          <p className="m-3 col-12">Filtrar productos</p>
+          <p className="filtrar">Filtrar productos</p>
           <ul className="justify-content-center ul-productos">
             <li>
               <Link to={`/`} className="text-dark m-4">
