@@ -1,5 +1,4 @@
 <h1 align="center">Hi 👋, I'm Jonathan Guglielmo</h1>
-<h3 align="center">A passionate frontend developer from Argentina</h3>
 
 - 🔭 I’m currently working on [E-commerce Shark Store](https://wizardly-goldberg-8a57f1.netlify.app/)
 
