@@ -3,7 +3,7 @@
 
 - 🔭 I’m currently working on [E-commerce Shark Store](https://wizardly-goldberg-8a57f1.netlify.app/)
 
-# Tienda virtual con React - by Damian Abalos
+# Tienda virtual con React - by Jonathan Guglielmo
 
 [![N|Solid](https://i.ibb.co/JrQ3zBW/logo.png)](https://wizardly-goldberg-8a57f1.netlify.app/)
 
